@@ -8,6 +8,14 @@
 
 Em testes normalmente nos deparamos com o dilema entre as abordagens DRY e DAMP. DRY significa Don't Repeat Yourself, que é o que fazemos normalmente quando estamos desenvolvendo para ter mais reutilização e menos repetição. DAMP significa Descriptive and Meaningful Phrases, onde o que é mais importante é a legibilidade, mesmo que isso signifique ser um pouco mais repetitivo. Quando falamos principalmente do nome dos nossos testes é importante ser mais DAMP, de forma que ao ler os describes e its nós já saibamos o que aquele teste faz sem precisar investir muito tempo lendo todo o código de teste.
 
+Isso pode ser melhor alcançado se os testes falarem no nível de requisitos e incluírem 3 partes:
+
+1. O que está sendo testado? Por exemplo, o método validateUserEmail
+
+2. Sob que circunstâncias e cenário? Por exemplo, é utilizado um e-mail já cadastrado
+
+3. Qual é o resultado esperado? Por exemplo, deve retornar um erro informando que o e-mail já foi fornecido
+
 ## Exemplos
 ```javascript
 describe('Validate User Register Rules', () => {

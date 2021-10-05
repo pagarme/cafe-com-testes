@@ -17,8 +17,6 @@
 <h3 align="center">
   <a href="https://pagar.me/">🌐Pagar.me</a>
   <span> · </span>
-    <a href="https://mundipagg.com/">🌐Mundipagg</a>
-  <span> · </span>
   <a href="https://medium.com/pagarme">📚Medium pagar.me tech</a>
 </h3>
 
@@ -40,6 +38,8 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 ### A
 - [Allure adicionando conteúdo no report](artigos/allure-conteudo-no-report.md)
 
+### B
+- [Boas práticas no uso de mocks](artigos/boas-praticas-uso-de-mock.md)
 
 ### C
 - [Cypress Variáveis de Ambiente](artigos/cypress-variaveis-de-ambiente.md)

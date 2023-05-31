@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+manifestVersion: 0.0.1
+kind: System
+metadata:
+  name: cafe-com-testes
+  title: cafe com testes
+  namespace: pagarme
+  description: Tem por objetivo o compartilhamento de conhecimento sobre testes e boas práticas de desenvolvimento para a comunidade de fora
+  links:
+    - url: https://mundipagg.atlassian.net/wiki/spaces/PTDQ/pages/2159935538/Large-Tests
+      title: Cafe Com teste
+      icon: github
+  annotations:
+    github.com/project-slug: pagarme/cafe-com-testes
+    pagar.me/ci: false
+    pagar.me/cd: false
+    stone.co/pci: false
+    stone.co/sox: false
+    stone.co/pii: false
+spec:
+  owner: pagarme/qa-team
+  type: backend
+  system: pagarme/cafe-com-testes

@@ -4,7 +4,7 @@ kind: System
 metadata:
   name: cafe-com-testes
   title: cafe com testes
-  namespace: pagarme
+  namespace: to-be-defined
   description: Tem por objetivo o compartilhamento de conhecimento sobre testes e boas práticas de desenvolvimento para a comunidade de fora
   links:
     - url: https://mundipagg.atlassian.net/wiki/spaces/PTDQ/pages/2159935538/Large-Tests

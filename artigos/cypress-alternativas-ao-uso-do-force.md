@@ -76,7 +76,7 @@ cy.get("button").realHover({ position: "bottomLeft" }); // passa o mouse sobre o
 Essas são algumas das alternativas ao uso do {force: true} no Cypress que podem tornar os testes mais confiáveis, legíveis e manuteníveis.
 
 
-
-Referências:
+---
+## Referências:
 - [Documentação do Cypress](https://docs.cypress.io/api/commands/document)
 - [.dispatchEvents()](https://javascript.info/dispatch-events)

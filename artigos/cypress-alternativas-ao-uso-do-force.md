@@ -73,7 +73,7 @@ cy.get("body").realClick({ x: 100, y: 1240 }); // clica nas coordenadas x e y re
 cy.get("button").realHover({ position: "bottomLeft" }); // passa o mouse sobre o canto inferior esquerdo do botão
 ```
 
-Essas são algumas das alternativas ao uso do {force: true} no Cypress que podem tornar os testes mais confiáveis, legíveis e manuteníveis.
+Essas são algumas das alternativas ao uso do `{force: true}` no Cypress que podem tornar os testes mais confiáveis, legíveis e manuteníveis.
 
 
 ---

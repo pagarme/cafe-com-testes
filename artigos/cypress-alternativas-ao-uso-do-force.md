@@ -62,7 +62,7 @@ cy.get('#meu-elemento').trigger('mouseover'); // Usado para simular o comportame
 cy.get('#meu-elemento').then($checkbox => {  // Após localizado pelo cy.get() o elemento é passado para a função como parâmetro
         $checkbox[0].dispatchEvent(new Event('mouseover'))  // Dispara um evento no primeiro elemento do conjunto de elementos encontrados
         $checkbox.trigger('click') // Simula o comportamento do usuário clicando no elemento selecionado
-      })
+})
 ```
 
 - Também podemos utilizar o plugin [Cypress Real Events](https://github.com/dmtrKovalenko/cypress-real-events#cyrealhover) para simular comportamentos do usuário.

@@ -6,9 +6,9 @@
 
 # Alternativas ao uso do {force: true} nos comandos do Cypress
 
-Quando estamos escrevendo Testes e2e no Cypress, precisamos realizar ações, como: clicar em um botão, digitar em um campo de texto, selecionar uma opção em um menu suspenso etc. No entanto, às vezes, podemos encontrar situações em que os elementos da página não estão visíveis ou habilitados para a interação. Por exemplo: um botão pode estar escondido por um modal, um campo de texto pode estar desabilitado até que uma condição seja satisfeita, uma opção em um menu suspenso pode estar fora da área visível da tela etc. Nesses casos, o cypress irá falhar ao tentar interagir com esses elementos, pois ele segue as mesmas regras que um usuário real seguiria, ou seja, ele só irá interagir com elementos que estão visíveis e habilitados. Mas e se quisermos forçar a interação com esses elementos, mesmo que eles não estejam em um estado adequado para isso? É aí que entra o {force: true}.
+Quando estamos escrevendo Testes e2e no Cypress, precisamos realizar ações, como: Clicar em um botão, digitar em um campo de texto, selecionar uma opção em um menu suspenso, etc. No entanto, podemos encontrar situações em que os elementos da página não estão visíveis ou habilitados para a interação. Por exemplo: um botão pode estar escondido por um modal, um campo de texto pode estar desabilitado até que uma condição seja satisfeita, uma opção em um menu suspenso pode estar fora da área visível da tela etc. Nesses casos, o Cypress irá falhar ao tentar interagir com esses elementos, pois ele segue as mesmas regras que um usuário real seguiria, ou seja, ele só irá interagir com elementos que estão visíveis e habilitados. Mas e se quisermos forçar a interação com esses elementos, mesmo que eles não estejam em um estado adequado para isso? É aí que entra o `{force: true}`.
 
-O {force: true} é um argumento opcional que podemos passar para as ações do Cypress, como .click(), .type(), .select() etc. Ele faz com que o Cypress ignore as verificações de visibilidade e habilitação dos elementos e execute a ação de qualquer forma.
+O `{force: true}` é um argumento opcional que podemos passar para as ações do Cypress, como .click(), .type(), .select() etc. Ele faz com que o Cypress ignore as verificações de visibilidade e habilitação dos elementos e execute a ação de qualquer forma.
 
 # Em quais cenários seria válida a utilização?
 
@@ -18,7 +18,7 @@ Isso pode ser útil em alguns cenários de teste, como:
 2. Queremos acelerar o tempo de execução dos testes, evitando esperar que os elementos fiquem visíveis ou habilitados;
 3. Queremos contornar algum bug ou limitação do cypress ou da aplicação que impede a interação normal com os elementos.
 
-# Por que devemos evitar a utilização?
+# Em quais cenários devemos evitar a utilização?
 
 No entanto, o uso do {force: true} também tem seus riscos e desvantagens, como:
 
@@ -30,7 +30,7 @@ No entanto, o uso do {force: true} também tem seus riscos e desvantagens, como:
 
 Por isso, é recomendável evitar o uso do {force: true} sempre que possível e buscar alternativas que garantam que o teste reflita o comportamento real do usuário.
 
-# Quais alternativas podemos utilizar?
+## Quais alternativas podemos utilizar?
 
 Algumas dessas alternativas são:
 
@@ -40,7 +40,7 @@ Algumas dessas alternativas são:
 cy.get('#id-do-elemento'); 
 ```
 
-- Usar comandos, como .should('be.visible') ou .should('not.be.disabled') para verificar as condições dos elementos antes de interagir com eles;
+- Usar comandos, como `.should('be.visible')` ou `.should('not.be.disabled')` para verificar as condições dos elementos antes de interagir com eles;
 
 ```javascript
 cy.get('#meu-elemento').should('be.visible'); // verifica se o elemento indicado está visível
@@ -48,7 +48,7 @@ cy.get('#meu-elemento').should('be.visible'); // verifica se o elemento indicado
 cy.get('#meu-botao').should('not.be.disabled').click(); // Valida que o elemento indicado está visível e simula o click do mouse
 ```
 
-- Usar comandos, como .scrollIntoView() ou .trigger('mouseover') para tornar os elementos visíveis ou acessíveis;
+- Usar comandos, como `.scrollIntoView()` ou `.trigger('mouseover')` para tornar os elementos visíveis ou acessíveis;
 
 ```javascript
 cy.get('#meu-elemento').scrollIntoView(); // Usado para simular o scroll em cima do elemento selecionado

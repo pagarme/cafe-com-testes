@@ -56,7 +56,7 @@ cy.get('#meu-elemento').scrollIntoView(); // Usado para simular o scroll em cima
 cy.get('#meu-elemento').trigger('mouseover'); // Usado para simular o comportamento do mouse em cima do elemento selecionado
 ```
 
-- Usando o método em JavaScript .dispatchEvent() para simular uma ação, no caso abaixo, disparamos um evento do tipo 'mouseover' simulanto o comportamento do usuário passando o mouse sobre o elemento.
+- Usando o método em JavaScript `.dispatchEvent()` para simular uma ação, no caso abaixo, disparamos um evento do tipo _'mouseover'_ simulanto o comportamento do usuário passando o mouse sobre o elemento.
 
 ```javascript
 cy.get('#meu-elemento').then($checkbox => {  // Após localizado pelo cy.get() o elemento é passado para a função como parâmetro

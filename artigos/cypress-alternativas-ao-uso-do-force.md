@@ -45,7 +45,7 @@ cy.get('#id-do-elemento');
 ```javascript
 cy.get('#meu-elemento').should('be.visible'); // verifica se o elemento indicado está visível
 
-cy.get('#meu-botao').should('not.be.disabled').click(); // Valida que o elemento indicado está visível e simula o click do mouse
+cy.get('#meu-botao').should('not.be.disabled').click(); // Valida que o elemento indicado não está desabilitado e simula o click do mouse
 ```
 
 - Usar comandos, como `.scrollIntoView()` ou `.trigger('mouseover')` para tornar os elementos visíveis ou acessíveis;

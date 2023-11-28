@@ -43,6 +43,7 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ### C
 - [Cypress Variáveis de Ambiente](artigos/cypress-variaveis-de-ambiente.md)
+- [Cypress Alternativas ao uso do {force: true}](artigos/cypress-alternativas-ao-uso-do-force.md)
 
 ### E
 - [Estrutura dos testes](artigos/estrutura-dos-testes.md)
